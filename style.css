@@ -1,0 +1,25 @@
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
+body {
+  background-color: #eee; }
+
+/* MODULES - Re-usable site elements.
+========================================================================== */
+.panel-aside {
+  box-shadow: 0 0 3px #111;
+  background-color: #ddd;
+  margin-right: -15px;
+  margin-left: -15px;
+  min-width: 100%;
+  padding: 1em; }
+  @media (min-width: 768px) {
+    .panel-aside {
+      box-shadow: 0 0 3px #111;
+      height: 100%; } }
+  .panel-aside .img-border {
+    border: 1em solid #c4c4c4;
+    border-radius: 50%; }
+
+/*# sourceMappingURL=style.css.map */

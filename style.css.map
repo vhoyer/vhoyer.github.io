@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;6EAC6E;AAO7E;6EAC6E;ACT7E,IAAI;EACH,gBAAgB,ECCP,IAAI;;AFYd;6EAC6E;AGf7E,YAAa;EACZ,UAAU,EAAE,YAAY;EACxB,gBAAgB,EDFD,IAAI;ECGnB,YAAY,EAAE,KAAK;EACnB,WAAW,EAAE,KAAK;EAClB,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,GAAG;ECQX,yBAA0B;IDd5B,YAAa;MASX,UAAU,EAAE,YAAY;MACxB,MAAM,EAAE,IAAI;EAGb,wBAAW;IACV,MAAM,EAAE,iBAAqC;IAC7C,aAAa,EAAE,GAAG",
+"sources": ["sass/global.scss","sass/framework/_layout.scss","sass/base/_variables.scss","sass/modules/_panel-aside.scss","sass/base/_mixins.scss"],
+"names": [],
+"file": "style.css"
+}
