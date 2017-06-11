@@ -1,25 +1,54 @@
 /* BASE - Base Variable file along with starting point Mixins and Placeholders.
 ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /* FRAMEWORK - Structure and layout files.
 ========================================================================== */
 body {
-  background-color: #eee; }
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+  color: #222; }
+
+a, a:visited {
+  color: #0275d8;
+  text-decoration: none; }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #025aa5;
+    text-decoration: underline; }
 
 /* MODULES - Re-usable site elements.
 ========================================================================== */
 .panel-aside {
   box-shadow: 0 0 3px #111;
   background-color: #ddd;
-  margin-right: -15px;
-  margin-left: -15px;
-  min-width: 100%;
-  padding: 1em; }
-  @media (min-width: 768px) {
-    .panel-aside {
-      box-shadow: 0 0 3px #111;
-      height: 100%; } }
+  width: 100%;
+  padding: 1em 0; }
   .panel-aside .img-border {
     border: 1em solid #c4c4c4;
     border-radius: 50%; }
+  .panel-aside .img-profile {
+    display: block;
+    margin: 0 auto;
+    width: 70%; }
+  .panel-aside h1 {
+    text-align: center; }
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%; }
+  .social a {
+    transition: color ease-in .2s; }
+  .social #github:hover {
+    color: #000; }
+  .social #facebook:hover {
+    color: #3b5998; }
+  .social #twitter:hover {
+    color: #009eed; }
+  .social #instagram:hover {
+    color: #bc2a8d; }
+  .social #linkedin:hover {
+    color: #0077b5; }
 
 /*# sourceMappingURL=style.css.map */

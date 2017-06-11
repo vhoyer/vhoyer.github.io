@@ -1,3 +1,16 @@
 body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
 	background-color: $bgcolor;
+	color: #222;
+}
+
+a,a:visited{
+	color: #0275d8;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		color: #025aa5;
+		text-decoration: underline;
+	}
 }
