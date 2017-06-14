@@ -3,5 +3,7 @@
 }
 
 .panel-aside + .content {
-	margin-left: $asidew;
+	@media screen and (min-width: $md){
+		margin-left: $asidew;
+	}
 }

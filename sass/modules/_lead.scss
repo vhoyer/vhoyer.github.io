@@ -4,3 +4,11 @@
 	width: 90%;
 	padding: .05em 1em;
 }
+
+#portifolio>.lead {
+	@media screen and (min-width: $lg){
+		max-width: 49%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

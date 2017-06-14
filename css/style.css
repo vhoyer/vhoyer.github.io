@@ -1,7 +1,7 @@
 /* BASE - Base Variable file along with starting point Mixins and Placeholders.
 ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-/* line 1, J:/root/dev-env/vhoyer.github.io/sass/base/_placeholders.scss */
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/base/_placeholders.scss */
 .panel-aside, .lead {
   box-shadow: 0 0 3px #111;
   background-color: #ddd;
@@ -9,7 +9,7 @@
 
 /* FRAMEWORK - Structure and layout files.
 ========================================================================== */
-/* line 1, J:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -18,43 +18,50 @@ body {
   padding-bottom: 1em;
 }
 
-/* line 9, J:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
+/* line 9, E:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* line 13, J:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
+/* line 13, E:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
 a, a:visited {
   color: #0275d8;
   text-decoration: none;
 }
 
-/* line 17, J:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
+/* line 17, E:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #025aa5;
   text-decoration: underline;
 }
 
-/* line 1, J:/root/dev-env/vhoyer.github.io/sass/framework/_classes.scss */
+/* line 23, E:/root/dev-env/vhoyer.github.io/sass/framework/_layout.scss */
+ul {
+  padding-left: 1.2em;
+}
+
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/framework/_classes.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 5, J:/root/dev-env/vhoyer.github.io/sass/framework/_classes.scss */
-.panel-aside + .content {
-  margin-left: 16em;
+@media screen and (min-width: 767px) {
+  /* line 5, E:/root/dev-env/vhoyer.github.io/sass/framework/_classes.scss */
+  .panel-aside + .content {
+    margin-left: 16em;
+  }
 }
 
 /* MODULES - Re-usable site elements.
 ========================================================================== */
-/* line 1, J:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
 .panel-aside {
   width: 100%;
   padding: 1em 0;
 }
 
-@media (min-width: 767px) {
-  /* line 1, J:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
+@media screen and (min-width: 767px) {
+  /* line 1, E:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
   .panel-aside {
     position: fixed;
     top: 0;
@@ -64,25 +71,39 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   }
 }
 
-/* line 14, J:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
+/* line 14, E:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
 .panel-aside .img-border {
   border: 1em solid #c4c4c4;
   border-radius: 50%;
 }
 
-/* line 19, J:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
+/* line 19, E:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
 .panel-aside .img-profile {
   display: block;
   margin: 0 auto;
   width: 70%;
 }
 
-/* line 25, J:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
+/* line 25, E:/root/dev-env/vhoyer.github.io/sass/modules/_panel-aside.scss */
 .panel-aside h1 {
   text-align: center;
 }
 
-/* line 1, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/modules/_portifolio.scss */
+#portifolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 961px) {
+  /* line 1, E:/root/dev-env/vhoyer.github.io/sass/modules/_portifolio.scss */
+  #portifolio {
+    padding: 0 5%;
+  }
+}
+
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social {
   display: flex;
   justify-content: space-around;
@@ -90,41 +111,50 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   width: 80%;
 }
 
-/* line 7, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 7, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social a {
   transition: color ease-in .2s;
 }
 
-/* line 11, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 11, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social #github:hover {
   color: #000;
 }
 
-/* line 15, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 15, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social #facebook:hover {
   color: #3b5998;
 }
 
-/* line 19, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 19, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social #twitter:hover {
   color: #009eed;
 }
 
-/* line 23, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 23, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social #instagram:hover {
   color: #bc2a8d;
 }
 
-/* line 27, J:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
+/* line 27, E:/root/dev-env/vhoyer.github.io/sass/modules/_social.scss */
 .social #linkedin:hover {
   color: #0077b5;
 }
 
-/* line 1, J:/root/dev-env/vhoyer.github.io/sass/modules/_lead.scss */
+/* line 1, E:/root/dev-env/vhoyer.github.io/sass/modules/_lead.scss */
 .lead {
   margin: 1em auto 0;
   width: 90%;
   padding: .05em 1em;
+}
+
+@media screen and (min-width: 961px) {
+  /* line 8, E:/root/dev-env/vhoyer.github.io/sass/modules/_lead.scss */
+  #portifolio > .lead {
+    max-width: 49%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=../css/style.map */
