@@ -1,3 +1,7 @@
 .bold {
 	font-weight: bold;
 }
+
+.panel-aside + .content {
+	margin-left: $asidew;
+}
