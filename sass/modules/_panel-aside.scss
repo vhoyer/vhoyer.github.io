@@ -1,6 +1,5 @@
 .panel-aside {
-	box-shadow: 0 0 3px #111;
-	background-color: $aside_bgcolor;
+	@extend %card;
 	width: 100%;
 	padding: 1em 0;
 

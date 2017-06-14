@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "../sass/style.css",
+	"sources": [
+		"../sass/style.scss",
+		"../sass/base/_variables.scss",
+		"../sass/base/_mixins.scss",
+		"../sass/base/_placeholders.scss",
+		"../sass/framework/_layout.scss",
+		"../sass/framework/_classes.scss",
+		"../sass/modules/_panel-aside.scss",
+		"../sass/modules/_social.scss",
+		"../sass/modules/_lead.scss"
+	],
+	"sourcesContent": [
+		"/* BASE - Base Variable file along with starting point Mixins and Placeholders.\n========================================================================== */\n\n@import 'base/_variables.scss';\n@import 'base/_mixins.scss';\n@import 'base/_placeholders.scss';\n@import url('https://fonts.googleapis.com/css?family=Open+Sans');\n\n\n/* FRAMEWORK - Structure and layout files.\n========================================================================== */\n\n@import 'framework/_layout.scss';\n@import 'framework/_classes.scss';\n\n\n/* MODULES - Re-usable site elements.\n========================================================================== */ \n\n@import 'modules/_panel-aside.scss';\n@import 'modules/_social.scss';\n@import 'modules/_lead.scss';\n",
+		"$aside_bgcolor: #ddd;\n\n$bgcolor: #eee;\n",
+		"@mixin mquery($size) {\n\t@if $size == xs {\n\t\t@media (min-width: 320px) {\n\t\t\t@content;\n\t\t}\n\t}\n\n\t@else if $size == sm {\n\t\t@media (min-width: 480px) {\n\t\t\t@content;\n\t\t}\n\t}\n\n\t@else if $size == md {\n\t\t@media (min-width: 768px) {\n\t\t\t@content;\n\t\t}\n\t}\n\n\t@else if $size == lg {\n\t\t@media (min-width: 929px) {\n\t\t\t@content;\n\t\t}\n\t}\n\n\t@else if $size == xl {\n\t\t@media (min-width: 1200px) {\n\t\t\t@content;\n\t\t}\n\t}\n}\n",
+		"%card {\n\tbox-shadow: 0 0 3px #111;\n\tbackground-color: $aside_bgcolor;\n}\n",
+		"body{\n\tmargin: 0;\n\tfont-family: 'Open Sans', sans-serif;\n\tbackground-color: $bgcolor;\n\tcolor: #222;\n\tpadding-bottom: 1em;\n}\n\n*, *:before, *:after {\n\tbox-sizing: border-box;\n}\n\na,a:visited{\n\tcolor: #0275d8;\n\ttext-decoration: none;\n\n\t&:hover, &:focus {\n\t\tcolor: #025aa5;\n\t\ttext-decoration: underline;\n\t}\n}\n",
+		".bold {\n\tfont-weight: bold;\n}\n",
+		".panel-aside {\n\t@extend %card;\n\twidth: 100%;\n\tpadding: 1em 0;\n\n\t@media (min-width: 480px) {\n\t}\n\n\t.img-border{\n\t\tborder: 1em solid darken($aside_bgcolor, 10%);\n\t\tborder-radius: 50%;\n\t}\n\n\t.img-profile {\n\t\tdisplay: block;\n\t\tmargin: 0 auto;\n\t\twidth: 70%;\n\t}\n\n\th1 {\n\t\ttext-align: center;\n\t}\n}\n",
+		".social {\n\tdisplay: flex;\n\tjustify-content: space-around;\n\tmargin: 0 auto;\n\twidth: 80%;\n\n\ta {\n\t\ttransition: color ease-in .2s;\n\t}\n\n\t#github:hover{\n\t\tcolor: #000;\n\t}\n\n\t#facebook:hover{\n\t\tcolor: #3b5998;\n\t}\n\n\t#twitter:hover{\n\t\tcolor: #009eed;\n\t}\n\n\t#instagram:hover{\n\t\tcolor: #bc2a8d;\n\t}\n\n\t#linkedin:hover{\n\t\tcolor: #0077b5;\n\t}\n}\n",
+		".lead {\n\t@extend %card;\n\tmargin: 1em auto 0;\n\twidth: 90%;\n\tpadding: .05em 1em;\n}\n"
+	],
+	"mappings": "AAAA;6EAC6E;AAK7E,OAAO,CAAC,wDAAI;;AMNZ,AHAA,YGAY,EEAZ,ALAA,KKAK,CLAC;EACL,UAAU,EAAE,YAAa;EACzB,gBAAgB,EFFD,IAAI,GEGnB;;AHMD;6EAC6E;;AIV7E,AAAA,IAAI,CAAA;EACH,MAAM,EAAE,CAAE;EACV,WAAW,EAAE,uBAAwB;EACrC,gBAAgB,EHDP,IAAI;EGEb,KAAK,EAAE,IAAK;EACZ,cAAc,EAAE,GAAI,GACpB;;;AAED,AAAA,CAAC,EAAE,AAAC,CAAA,AAAA,OAAO,EAAE,AAAC,CAAA,AAAA,MAAM,CAAC;EACpB,UAAU,EAAE,UAAW,GACvB;;;AAED,AAAA,CAAC,EAAC,AAAC,CAAA,AAAA,QAAQ,CAAA;EACV,KAAK,EAAE,OAAQ;EACf,eAAe,EAAE,IAAK,GAMtB;;EARD,AAAA,CAAC,AAIC,MAAM,EAJR,AAAA,CAAC,AAIU,MAAM,EAJf,AAAC,CAAA,AAAA,QAAQ,AAIT,MAAM,EAJN,AAAC,CAAA,AAAA,QAAQ,AAIA,MAAM,CAAC;IAChB,KAAK,EAAE,OAAQ;IACf,eAAe,EAAE,SAAU,GAC3B;;;ACnBF,AAAA,KAAK,CAAC;EACL,WAAW,EAAE,IAAK,GAClB;;ALcD;6EAC6E;;AMjB7E,AAAA,YAAY,CAAC;EAEZ,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,KAAM,GAmBf;;EAtBD,AAQC,YARW,CAQX,WAAW,CAAA;IACV,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,OAAM;IACxB,aAAa,EAAE,GAAI,GACnB;;EAXF,AAaC,YAbW,CAaX,YAAY,CAAC;IACZ,OAAO,EAAE,KAAM;IACf,MAAM,EAAE,MAAO;IACf,KAAK,EAAE,GAAI,GACX;;EAjBF,AAmBC,YAnBW,CAmBX,EAAE,CAAC;IACF,UAAU,EAAE,MAAO,GACnB;;;ACrBF,AAAA,OAAO,CAAC;EACP,OAAO,EAAE,IAAK;EACd,eAAe,EAAE,YAAa;EAC9B,MAAM,EAAE,MAAO;EACf,KAAK,EAAE,GAAI,GAyBX;;EA7BD,AAMC,OANM,CAMN,CAAC,CAAC;IACD,UAAU,EAAE,iBAAkB,GAC9B;;EARF,AAUQ,OAVD,CAUN,OAAO,AAAA,MAAM,CAAA;IACZ,KAAK,EAAE,IAAK,GACZ;;EAZF,AAcU,OAdH,CAcN,SAAS,AAAA,MAAM,CAAA;IACd,KAAK,EAAE,OAAQ,GACf;;EAhBF,AAkBS,OAlBF,CAkBN,QAAQ,AAAA,MAAM,CAAA;IACb,KAAK,EAAE,OAAQ,GACf;;EApBF,AAsBW,OAtBJ,CAsBN,UAAU,AAAA,MAAM,CAAA;IACf,KAAK,EAAE,OAAQ,GACf;;EAxBF,AA0BU,OA1BH,CA0BN,SAAS,AAAA,MAAM,CAAA;IACd,KAAK,EAAE,OAAQ,GACf;;;AC5BF,AAAA,KAAK,CAAC;EAEL,MAAM,EAAE,UAAW;EACnB,KAAK,EAAE,GAAI;EACX,OAAO,EAAE,SAAU,GACnB",
+	"names": []
+}

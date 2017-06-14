@@ -3,6 +3,11 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: $bgcolor;
 	color: #222;
+	padding-bottom: 1em;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
 }
 
 a,a:visited{
