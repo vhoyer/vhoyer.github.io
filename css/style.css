@@ -21,7 +21,8 @@ a, a:visited {
   color: #0275d8;
   text-decoration: none; }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #025aa5;
+    color: #025aa5; }
+  a:hover, a:visited:hover {
     text-decoration: underline; }
 
 ul {
@@ -38,34 +39,43 @@ ul {
 ========================================================================== */
 .panel-aside {
   width: 100%;
-  padding: 1em 0; }
+  padding: 1em 0 1; }
   @media screen and (min-width: 767px) {
     .panel-aside {
       position: fixed;
       top: 0;
       left: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
       width: 16em;
       height: 100%; } }
   .panel-aside .img-border {
-    border: 1em solid #c4c4c4;
+    border: 0.7em solid #c4c4c4;
     border-radius: 50%; }
   .panel-aside .img-profile {
     display: block;
     margin: 0 auto;
-    width: 70%; }
+    width: 70%;
+    max-width: 325px; }
   .panel-aside h1 {
     text-align: center; }
 
-#portifolio {
+#portfolio {
   justify-content: space-between; }
   @media screen and (min-width: 961px) {
-    #portifolio {
+    #portfolio {
       padding: 0 5%; } }
+  @media screen and (min-width: 961px) {
+    #portfolio .lead {
+      max-width: 49%;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .social {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 1.5em auto;
   width: 80%; }
   .social a {
     transition: color ease-in .2s; }
@@ -80,6 +90,18 @@ ul {
   .social #linkedin:hover {
     color: #0077b5; }
 
+nav a {
+  cursor: pointer; }
+nav ol {
+  padding: 0;
+  list-style: none; }
+nav ol > li {
+  text-align: center; }
+nav hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent 20%, rgba(0, 0, 0, 0.3) 50%, transparent 80%); }
+
 .lead {
   margin: 1em auto 0;
   width: 90%;
@@ -89,13 +111,7 @@ ul {
     margin: 0 auto;
     max-width: 100%; }
 
-@media screen and (min-width: 961px) {
-  #portifolio > .lead {
-    max-width: 49%;
-    margin-left: 0;
-    margin-right: 0; } }
-
-.flex, #portifolio {
+.flex, #portfolio {
   display: flex;
   flex-flow: row wrap; }
 
@@ -111,7 +127,7 @@ ul {
     background-color: #eee;
     text-align: center; }
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 961px) {
   .langs {
     display: flex;
     flex-flow: row wrap;

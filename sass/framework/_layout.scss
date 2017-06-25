@@ -16,6 +16,9 @@ a,a:visited{
 
 	&:hover, &:focus {
 		color: #025aa5;
+	}
+
+	&:hover{
 		text-decoration: underline;
 	}
 }

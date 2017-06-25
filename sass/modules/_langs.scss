@@ -1,7 +1,7 @@
 .langs{
 	@extend .skills;
 
-	@media screen and (min-width: 1060px) {
+	@media screen and (min-width: $lg) {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
