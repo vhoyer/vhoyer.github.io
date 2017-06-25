@@ -1,6 +1,5 @@
 #portifolio{
-	display: flex;
-	flex-flow: row wrap;
+	@extend .flex;
 	justify-content: space-between;
 
 	@media screen and (min-width: $lg){
